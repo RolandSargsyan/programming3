@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1><span>Tumo </span><span>Gyumri</span></h1>
+    <h1><span>Programming </span><span>III</span></h1>
+    <h1><span>Teacher </span><span>Karlen</span></h1>
+    <h1><span>Performer </span><span>Roland Sargsyan</span></h1>
+
+    <div class="desc__block">
+        <div class="desc__row">
+            <div class="rows">
+                <div class="desc__num" style="background-color: green">1</div>
+                <p class="desc__text">🌿-ը խոտն է, այն բազմանում է X ժամանակը մեկ ազատ տարածքում:</p>
+            </div>
+        </div>
+        <div class="desc__row">
+            <div class="rows">
+                <div class="desc__num" style="background-color: yellow">2</div>
+                <p class="desc__text">🌼-ը դեղին խոտն է, այն առաջանում է, երբ արևը այրում է խոտը:</p>
+            </div>
+        </div>
+        <div class="desc__row">
+            <div class="rows">
+                <div class="desc__num" style="background-color: orange">3</div>
+                <p class="desc__text">🌞-ը արևն է:</p>
+            </div>
+        </div>
+        <div class="desc__row">
+            <div class="rows">
+                <div class="desc__num" style="background-color: red">4</div>
+                <p class="desc__text">🙎🏻‍♂️-ը ամենակերն է, այն բազմանում է X քանակով ուտելիք ուտելուց հետո:</p>
+            </div>
+        </div>
+        <div class="desc__row">
+            <div class="rows">
+                <div class="desc__num" style="background-color: aqua">5</div>
+                <p class="desc__text">💦-ը ջուրն է, նրա հետքերով աճում է խոտը:</p>
+            </div>
+        </div>
+        <div class="desc__row">
+            <div class="rows">
+                <div class="desc__num" style="background-color: rgb(75, 75, 75)">6</div>
+                <p class="desc__text">🐼-ը խոտակերն է, այն բազմանում է X քանակով ուտելիք ուտելուց հետո:</p>
+            </div>
+        </div>
+    </div>
+    <div class="all__btns">
+        <button onclick="AddGrass()" id = "grass" class="add__btn" style="background-color: green">Add grass</button>
+        <button onclick="AddGrassEater()" id = "greater" class="add__btn" style="background-color: rgb(75, 75, 75)">Add grass
+            eater</button>
+        <button onclick="AddPredator()" id = "pred" class="add__btn" style="background-color: red">Add predator</button>
+        <button onclick="AddSun()" id = "sun" class="add__btn" style="background-color: orange">Add sun</button>
+        <button onclick="AddWater()" id = "wat" class="add__btn" style="background-color: aqua">Add water</button>
+        
+        <button onclick=" Kill()" id = "killall" class="add__btn" style="background-color: brown">Kill all
+            creatures</button>
+
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
